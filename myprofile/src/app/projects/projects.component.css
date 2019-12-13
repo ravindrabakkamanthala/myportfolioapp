@@ -1,0 +1,10 @@
+.example-card {
+  max-width: 400px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.mat-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}

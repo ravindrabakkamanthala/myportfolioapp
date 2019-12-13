@@ -1,0 +1,32 @@
+.flex-spacer {
+  flex-grow: 1;
+}
+
+.menufont {
+  font-family: "proxima-nova";
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 2em;
+  color: #6598b8;
+}
+
+.titlefont {
+  font-family: "Source Sans Pro",sans-serif;
+  font-size: 26px;
+  text-transform: uppercase;
+  text-decoration: double;
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2em;
+  color: black;
+  cursor:pointer;
+}
+
+.mat-accent {
+  background-color: bisque;
+} 

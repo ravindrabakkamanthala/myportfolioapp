@@ -1,0 +1,16 @@
+<mat-toolbar color="default">
+  <mat-toolbar-row>
+    <span class="menu-spacer"></span>
+    <h1 [routerLink]="'/about'"><span class="titlefont">Ravindra Bakkamanthala</span></h1>
+    <span class="menu-spacer"></span>
+    <div class="flex-spacer"></div>
+    <div>
+      <a routerLinkActive="mat-accent" mat-button [routerLink]="'/about'"><span class="menufont">ABOUT</span></a>
+      <a routerLinkActive="mat-accent" mat-button [routerLink]="'/skills'"><span class="menufont">SKILLS</span></a>
+      <a routerLinkActive="mat-accent" mat-button [routerLink]="'/experience'"><span class="menufont">EXPERIENCES</span></a>
+      <a routerLinkActive="mat-accent" mat-button [routerLink]="'/projects'"><span class="menufont">PROJECTS</span></a>
+      <a routerLinkActive="mat-accent" mat-button [routerLink]="'/contact'"><span class="menufont">CONTACT</span></a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
