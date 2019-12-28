@@ -1,0 +1,71 @@
+[
+  {
+    "align": "left",
+    "companyname": "AT&T Labs",
+    "date": "(04/2019 - Present)",
+    "description": [ "POLO stands for Portal Open Loop Operations, which is used to restart, shutdown and to get the status of network resources." ],
+    "responsibilites": [
+      "Developed Single Page Application using W2UI Framework.",
+      "Developed Log Parser streaming application which will act as VI Editor on showing the live streaming logs on GUI.",
+      "Developed Workflow Process Engine to execute the work flow tasks using Spring Boot Micro Service application.",
+      "Developed Non-Open Stack Action implementations (Start/Stop/Restart/Configure) the VNF’s on fly Asynchronously.",
+      "Developed Network Topology to Show the Network Configuration in Visualization form using D3 js and Vue js.",
+      "Integrated Jenkins Pipeline to build the application and deploy to Test Servers."
+    ]
+  },
+  {
+    "align": "right",
+    "companyname": "Verizon",
+    "date": "(12/2018 - 05/2019)",
+    "description":
+    [
+      "Federal CLIN Audit: CLIN is a Federal billing audit application and it stands for Contract Line Item Number. The Auditing process currently is done based on Manual Procedure. The Application handles on automating the process on generating the data based on the user requested info.",
+      "My Business: Verizon My Business is a central platform to purchase or upgrade device or accessories."
+    ],
+    "responsibilites": [
+      "Federal CLIN Audit:",
+      "Developed CLIN Application using Angular 7, bootstrap CSS and Spring Boot.",
+      "Involved in design and coding phase.",
+      "Integrated Hibernate to communicate with TeraData database.",
+      "Worked on writing Karma/Jasmine test cases for UI and added JUnits, for backend.",
+      "My Business:",
+      "Migrated the Complete Shopping Cart and Checkout Pages to Angular 7 from Angular JS and backend to Spring Boot from Servlets.",
+      "Lead the Offshore team and closely monitored the work on day to day basis.",
+      "Actively involved in supporting test-driven development.",
+      "Developed static content to render across all applications using AEM."
+    ]
+  },
+  {
+    "align": "left",
+    "companyname": "AT&T Labs",
+    "date": "(02/2015 - 12/2018)",
+    "opensource": "https://wiki.onap.org/display/DW/Policy",
+    "description": [ "Network Virtualization Platform creates a network on demand using Policy Engine which is back bone core Engine for access/deny requests coming from various Network component clients. The Application is key back bone for the AT&T Network Infrastructure." ],
+    "responsibilites": [
+      "Developed Policy for ECOMP network framework, currently open source (ONAP) using XACML, JBoss Drools.",
+      "Involved in analysis, design, and high-level coding phase.",
+      "Developed a dynamic render Form Template using YAML models.",
+      "Developed API for Java, REST calls and Python modules to use the policy application servers.",
+      "Developed notification services to implement push notification scheme in distributed systems using WebSocket and Kafka.",
+      "Implemented Security Basic Authentication and custom authorization services for the RESTful web services.",
+      "Worked on MySQL/MariaDB database and Elastic Search for search optimization.",
+      "Migrated the Application from Vaadin Framework to AngularJS and used Spring and Hibernate for backend Implementation.",
+      "Designed Sequence chart, Class diagrams and deployment diagram using UML.",
+      "Developed JUnit test cases for all the developed modules.",
+      "As part of support to existing platform, played a major role in trouble shooting issues and fixing production issues.",
+      "Developed shell scripts to automate the installation and build process."
+    ]
+  },
+  {
+    "align": "right",
+    "companyname": "Cynosure Technologies LLC",
+    "date": "(12/2014 - 01/2015)",
+    "description": [ "Online Quiz System is most prominent software in present Educational System. This would be the most time saving in case of evaluation for the instructor rather than checking the paper and evaluating the marks manually.Different roles have been given to the Admin, Instructor, and Student." ],
+    "responsibilites": [
+      "Designed and developed the application using Java from the scratch.",
+      "Worked closely with the application users to improve the User friendliness.",
+      "Improved the performance of the application using profilers and wrote test cases.",
+      "Involved in the design and the development phase with the other developers."
+    ]
+  }
+]

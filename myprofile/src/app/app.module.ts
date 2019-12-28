@@ -7,7 +7,6 @@ import {
     MatListModule, MatButtonModule, MatMenuModule, MatCardModule, MatGridListModule, MatFormFieldModule,
     MatInputModule, MatSelectModule, MatExpansionModule
 } from '@angular/material';
-import { FormGroup, FormBuilder } from "@angular/forms";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,7 +16,8 @@ import { SkillsComponent } from './skills/skills.component';
 import { AboutComponent } from './about/about.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { ContactComponent } from './contact/contact.component';
+import { AppService } from './app.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,13 +27,13 @@ import { ContactComponent } from './contact/contact.component';
         SkillsComponent,
         AboutComponent,
         ExperiencesComponent,
-        ProjectsComponent,
-        ContactComponent
+        ProjectsComponent
   ],
   imports: [
       BrowserModule,
       BrowserAnimationsModule,
       AppRoutingModule,
+      HttpClientModule,
       MatToolbarModule,
       MatTabsModule,
       MatSidenavModule,
@@ -49,7 +49,7 @@ import { ContactComponent } from './contact/contact.component';
       MatExpansionModule,
       NgbModule
   ],
-  providers: [],
+  providers: [AppService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

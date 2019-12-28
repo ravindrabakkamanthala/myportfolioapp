@@ -1,130 +1,34 @@
-<div class="main-container">
+<div class="main-container" style="width:100%;height:100%">
+  <br />
+  <br />
+  <br />
   <h3>Professional Experience</h3>
-  <div class="timeline">
-    <div class="container left">
+  <div class="timeline" *ngFor="let data of experiencedatas">
+    <div class="tcontainer {{data.align}}">
       <div class="content">
         <mat-accordion>
           <mat-expansion-panel>
             <mat-expansion-panel-header>
               <mat-panel-title>
-                AT&T Labs
+                {{data.companyname}}
               </mat-panel-title>
               <mat-panel-description>
-                (04/2019 - Present)
+                {{data.date}}
               </mat-panel-description>
             </mat-expansion-panel-header>
-              <div>
-                <p>
-                  POLO stands for Portal Open Loop Operations,
-                  which is used to restart, shutdown and to get the status of network resources.
-                </p>
-                <p><b>Responsibilities:</b></p>
-                <p>Developed Single Page Application using W2UI Framework.</p>
-                <p>Developed Log Parser streaming application which will act as VI Editor on showing the live streaming logs on GUI.</p>
-                <p>Developed Workflow Process Engine to execute the work flow tasks using Spring Boot Micro Service application.</p>
-                <p>Developed Non-Open Stack Action implementations (Start/Stop/Restart/Configure) the VNF’s on fly Asynchronously.</p>
-                <p>Developed Network Topology to Show the Network Configuration in Visualization form using D3 js and Vue js.</p>
-                <p>Integrated Jenkins Pipeline to build the application and deploy to Test Servers.</p>
+            <div>
+              <p *ngFor="let desc of data.description">
+               {{desc}}
+              </p>
+              <p *ngIf="data.opensource != null"><b>Open Source Wiki:</b><a href={{data.opensource}} target="_blank">wiki link</a></p>
+              <p><b>Responsibilities:</b></p>
+              <div *ngFor="let jobr of data.responsibilites">
+                <p>{{jobr}}</p>
               </div>
-          </mat-expansion-panel>
-        </mat-accordion>
-      </div>
-    </div>
-    <div class="container right">
-      <div class="content">
-        <mat-accordion>
-          <mat-expansion-panel>
-            <mat-expansion-panel-header>
-              <mat-panel-title>
-                Verizon
-              </mat-panel-title>
-              <mat-panel-description>
-                (12/2018 - 05/2019)
-              </mat-panel-description>
-            </mat-expansion-panel-header>
-            <div>
-              <p>
-                <b>Federal CLIN Audit:</b>CLIN is a Federal billing audit application and it stands for Contract Line Item Number. The Auditing process
-                currently is done based on Manual Procedure. The Application handles on automating the process on generating the data based on the
-                user requested info.
-              </p>
-              <p><b>My Business:</b>Verizon My Business is a central platform to purchase or upgrade device or accessories.</p>
-              <p><b>Responsibilities:</b></p>
-              <p><b>Federal CLIN Audit:</b></p>
-              <p>Developed CLIN Application using Angular 7, bootstrap CSS and Spring Boot.</p>
-              <p>Involved in design and coding phase.</p>
-              <p>Integrated Hibernate to communicate with TeraData database.</p>
-              <p>Worked on writing Karma/Jasmine test cases for UI and added JUnits, for backend.</p>
-              <p><b>My Business:</b></p>
-              <p>Migrated the Complete Shopping Cart and Checkout Pages to Angular 7 from Angular JS and backend to Spring Boot from Servlets.</p>
-              <p>Lead the Offshore team and closely monitored the work on day to day basis.</p>
-              <p>Actively involved in supporting test-driven development.</p>
-              <p>Developed static content to render across all applications using AEM.</p>
             </div>
           </mat-expansion-panel>
         </mat-accordion>
       </div>
     </div>
-    <div class="container left">
-      <div class="content">
-        <mat-accordion>
-          <mat-expansion-panel>
-            <mat-expansion-panel-header>
-              <mat-panel-title>
-                AT&T Labs
-              </mat-panel-title>
-              <mat-panel-description>
-                (02/2015 - 12/2018)
-              </mat-panel-description>
-            </mat-expansion-panel-header>
-            <div>
-              <p><b>Open Source Wiki:</b><a href="https://wiki.onap.org/display/DW/Policy" target="_blank">wiki link</a></p>
-              <p>Network Virtualization Platform creates a network on demand using Policy Engine which is back bone core Engine for access/deny
-                requests coming from various Network component clients. The Application is key back bone for the AT&T Network Infrastructure.</p>
-              <p><b>Responsibilities:</b></p>
-              <p>Developed Policy for ECOMP network framework, currently open source (ONAP) using XACML, JBoss Drools.</p>
-              <p>Involved in analysis, design, and high-level coding phase.</p>
-              <p>Developed a dynamic render Form Template using YAML models.</p>
-              <p>Developed API for Java, REST calls and Python modules to use the policy application servers.</p>
-              <p>Developed notification services to implement push notification scheme in distributed systems using WebSocket and Kafka.</p>
-              <p>Implemented Security Basic Authentication and custom authorization services for the RESTful web services.</p>
-              <p>Worked on MySQL/MariaDB database and Elastic Search for search optimization.</p>
-              <p>Migrated the Application from Vaadin Framework to AngularJS and used Spring and Hibernate for backend Implementation.</p>
-              <p>Designed Sequence chart, Class diagrams and deployment diagram using UML.</p>
-              <p>Developed JUnit test cases for all the developed modules.</p>
-              <p>As part of support to existing platform, played a major role in trouble shooting issues and fixing production issues.</p>
-              <p> Developed shell scripts to automate the installation and build process.</p>
-            </div>
-          </mat-expansion-panel>
-        </mat-accordion>
-      </div>
-    </div>
-    <div class="container right">
-      <div class="content">
-        <mat-accordion>
-          <mat-expansion-panel>
-            <mat-expansion-panel-header>
-              <mat-panel-title>
-                Cynosure Technologies LLC
-              </mat-panel-title>
-              <mat-panel-description>
-                (12/2014 - 01/2015)
-              </mat-panel-description>
-            </mat-expansion-panel-header>
-            <div>
-              <p>
-                Online Quiz System is most prominent software in present Educational System. This would be the most time saving in case of evaluation
-                for the instructor rather than checking the paper and evaluating the marks manually. Different roles have been given to the Admin,
-                Instructor, and Student.
-              </p>
-              <p><b>Responsibilities:</b></p>
-              <p>Designed and developed the application using Java from the scratch.</p>
-              <p>Worked closely with the application users to improve the User friendliness.</p>
-              <p>Improved the performance of the application using profilers and wrote test cases.</p>
-              <p>Involved in the design and the development phase with the other developers.</p>
-            </div>
-          </mat-expansion-panel>
-        </mat-accordion>
     </div>
   </div>
-</div>

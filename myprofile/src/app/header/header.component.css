@@ -2,31 +2,47 @@
   flex-grow: 1;
 }
 
-.menufont {
-  font-family: "proxima-nova";
-  font-size: 12px;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 3px;
-  font-weight: 800;
-  font-style: normal;
-  line-height: 2em;
-  color: #6598b8;
-}
-
-.titlefont {
+.tfont {
   font-family: "Source Sans Pro",sans-serif;
-  font-size: 26px;
-  text-transform: uppercase;
+  font-size: 20px;
   text-decoration: double;
-  letter-spacing: 3px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 2em;
-  color: black;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.mat-accent {
-  background-color: bisque;
-} 
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+ }
+
+.tooltip .tooltiptext::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}

@@ -13,8 +13,19 @@ am4core.useTheme(am4themes_animated);
 export class SkillsComponent implements OnInit {
 
     private chart: am4charts.XYChart3D;
+    breakpoint: number;
+    colspoint: number = 0;
 
     constructor(private zone: NgZone) { }
+
+    ngOnInit() {
+        this.breakpoint = (window.innerWidth <= 400) ? 1 : 3;
+        this.colspoint = (window.innerWidth <= 400) ? 1 : 0;
+    }
+
+    onResize(event) {
+        this.breakpoint = (event.target.innerWidth <= 400) ? 1 : 3;
+    }
 
     ngAfterViewInit() {
         this.zone.runOutsideAngular(() => {
@@ -368,8 +379,4 @@ export class SkillsComponent implements OnInit {
             }
         });
     }
-
-    ngOnInit() {
-    }
-
 }

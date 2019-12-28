@@ -1,7 +1,9 @@
-<div class="main-container">
+<div class="" style="width:100%;height:100%">
+  <br />
+  <br />
   <br />
   <h3 align="center" class="notefont"><b>Note:</b> All Skills are rated by score 10.</h3>
-  <mat-grid-list cols="3" rowHeight="100px">
+  <mat-grid-list [cols]="breakpoint" rowHeight="100px" (window:resize)="onResize($event)">
     <mat-grid-tile [colspan]="1" [rowspan]="4">
       <mat-card style="width:100%; height:100%">
         <mat-card-title>Languages:</mat-card-title>
@@ -26,13 +28,13 @@
         <div id="frameworkSkillsDiv" style="width: 100%; height: 300px"></div>
       </mat-card>
     </mat-grid-tile>
-    <mat-grid-tile [colspan]="2" [rowspan]="4">
+    <mat-grid-tile [colspan]="colspoint == 0 ? 2 : 1" [rowspan]="4">
       <mat-card style="width:100%; height:100%">
         <mat-card-title>Technologies:</mat-card-title>
         <div id="technologySkillsDiv" style="width: 100%; height: 300px"></div>
       </mat-card>
     </mat-grid-tile>
-    <mat-grid-tile [colspan]="2" [rowspan]="4">
+    <mat-grid-tile [colspan]="colspoint == 0 ? 2 : 1" [rowspan]="4">
       <mat-card style="width:100%; height:100%">
         <mat-card-title>Servers/Version Control/Testing Frameworks:</mat-card-title>
         <div id="serverAndVersionControlSkillsDiv" style="width: 100%; height: 300px"></div>
@@ -44,7 +46,7 @@
         <div id="cloudTechnologySkillsDiv" style="width: 100%; height: 300px"></div>
       </mat-card>
     </mat-grid-tile>
-    <mat-grid-tile [colspan]="3" [rowspan]="4">
+    <mat-grid-tile [colspan]="colspoint == 0 ? 3 : 1" [rowspan]="4">
       <mat-card style="width:100%; height:100%">
         <mat-card-title>Tools:</mat-card-title>
         <div id="toolsSkillsDiv" style="width: 100%; height: 300px"></div>

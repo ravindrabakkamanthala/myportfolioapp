@@ -10,31 +10,66 @@
   font-family: Helvetica, sans-serif, Arial;
 }
 
-.image-cropper {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
-}
-
-.profile-pic {
-  display: inline;
-  margin: 0 auto;
-  margin-left: -25%;
-  width: auto;
-}
 .example-card {
   max-width: 400px;
-  margin-top: 50px;
-  margin-left: 50px;
+  margin-top: 30px;
+  margin-left:20px;
+  margin-right:20px;
 }
 
+#header-text {
+  -webkit-animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-name: rotate;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-duration: 4s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-name: rotate;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-duration: 4s;
+  -o-animation-timing-function: linear;
+  -o-animation-name: rotate;
+  -o-animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+}
 .header-text:after {
   content: "";
   animation: spin 20s linear infinite;
 }
+@-webkit-keyframes spin {
+  0% {
+    content: "I am Ravindra Bakkamanthala";
+    color: aqua;
+  }
 
+  20% {
+    content: "I am a Full Stack Developer";
+    color: brown;
+  }
+
+  40% {
+    content: "I am a Constant Learner";
+    color: cadetblue;
+  }
+
+  60% {
+    content: "I am a Smart Coder";
+    color: chocolate;
+  }
+
+  80% {
+    content: "I am a Visionary Leader";
+    color: darkorange;
+  }
+
+  100% {
+    content: "I am a dedicated team player";
+    color: darkorange;
+  }
+}
 @keyframes spin {
   0% {
     content: "I am Ravindra Bakkamanthala";
@@ -48,12 +83,12 @@
 
   40% {
     content: "I am a Constant Learner";
-    color: chartreuse;
+    color: cadetblue;
   }
 
   60% {
     content: "I am a Smart Coder";
-    color: chartreuse;
+    color: chocolate;
   }
 
   80% {
@@ -66,3 +101,24 @@
     color: darkorange;
   }
 }
+
+.mat-grid-tile {
+  position:relative;
+}
+
+.row {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.block {
+  width: 100px;
+  float: left;
+}
+
+
+
+b {
+  font-weight:bold;
+}
+

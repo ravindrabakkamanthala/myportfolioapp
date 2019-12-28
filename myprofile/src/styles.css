@@ -2,6 +2,18 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
+.main-container {
+  padding-top:10px;
+  overflow: auto;
+  padding-bottom: 100px;
+  display: block;
+  min-height: 80vh;
+}
+
+body {
+  background-color:floralwhite;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -10,22 +22,3 @@
 *:after {
    box-sizing: border-box;
  }
-
-body {
-  background-color:#D3D3D3;
-}
-.main-container {
-  min-height: 80vh; /* will cover the 100% of viewport */
-  overflow: hidden;
-  display: block;
-  position: relative;
-  padding-bottom: 100px; /* height of your footer */
-}
-
-footer {
-  background-color: #000000;
-  height: 10%;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}

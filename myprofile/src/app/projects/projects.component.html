@@ -1,49 +1,24 @@
-<div class="main-container">
+<div class="main-container" >
   <br />
   <br />
-  <mat-grid-list cols="3" rowHeight="100px">
-    <mat-grid-tile [colspan]="1" [rowspan]="6">
-      <mat-card class="example-card">
+  <br />
+  <mat-grid-list [cols]="colstotal" rowHeight="100px" (window:resize)="onResize($event)">
+    <mat-grid-tile [colspan]="1" [rowspan]="6" *ngFor="let data of projectsdata">
+      <mat-card class="example-card" style="width:100%; height:100%">
         <mat-card-header>
-          <mat-card-title>Web Crawler</mat-card-title>
-          <mat-card-subtitle>The Application crawls the webpages and stores the metadata politley.</mat-card-subtitle>
+          <mat-card-title>{{data.name}}</mat-card-title>
+          <mat-card-subtitle>{{data.description}}</mat-card-subtitle>
         </mat-card-header>
-        <img mat-card-image style="height:300px" src="/assets/WebCrawler.PNG">
+        <img mat-card-image style="height:300px" src={{data.image}}>
         <mat-card-content>
           <p>
-            The Application has total 3 componentns (UI, 2 backend Micro Services)
-            The UI Framework is developed using React JS.
-            And, backend Micro Services are developed using Spring Boot.
+            {{data.content}}
           </p>
         </mat-card-content>
         <mat-card-actions>
-          <a href="https://github.com/ravindrabakkamanthala/webcrawler" target="_blank" mat-button>Github</a>
+          <a href={{data.githublink}} target="_blank" mat-button>Github</a>
         </mat-card-actions>
       </mat-card>
-    </mat-grid-tile>
-
-    <mat-grid-tile [colspan]="1" [rowspan]="6">
-      <mat-card class="example-card">
-        <mat-card-header>
-          <mat-card-title>My Portfolio App</mat-card-title>
-          <mat-card-subtitle>
-            The Application which you are accessing right now :)
-          </mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image style="height:300px" src="/assets/MyPortfolio.PNG">
-        <div></div>
-        <div></div>
-        <mat-card-content>
-          <p>
-            This is a static Web Application that has been developed using Angular 8.
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <a href="https://github.com/ravindrabakkamanthala/myportfolioapp" target="_blank" mat-button>Github</a>
-        </mat-card-actions>
-      </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile [colspan]="1" [rowspan]="6">
     </mat-grid-tile>
   </mat-grid-list>
 </div>

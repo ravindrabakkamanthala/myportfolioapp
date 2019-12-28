@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from '../app.service';
 
 @Component({
   selector: 'app-about',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+    breakpoint: number;
+    aboutdata: any;
 
-  ngOnInit() {
-  }
+    constructor(appService: AppService) {
+        appService.getAboutData().subscribe(data => {
+            this.aboutdata = data;
+        })
+    }
 
+    ngOnInit() {
+        this.breakpoint = (window.innerWidth <= 400) ? 1 : 6;
+    }
+
+    onResize(event) {
+        this.breakpoint = (event.target.innerWidth <= 400) ? 1 : 6;
+    }
 }
