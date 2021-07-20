@@ -12,5 +12,12 @@
     "image": "/assets/MyPortfolio.PNG",
     "content": "This is a static Web Application that has been developed using Angular 8.",
     "githublink": "https://github.com/ravindrabakkamanthala/myportfolioapp"
+  },
+  {
+    "name": "Softworld Technologies",
+    "description": "Developed the complete website for Softworld technologies as a Free Lancer.",
+    "image": "/assets/Softworldusa.PNG",
+    "content": "Please, check out my resume to know more about technology stack.",
+    "githublink": "http://www.softworldtechnologies.com/"
   }
 ]
