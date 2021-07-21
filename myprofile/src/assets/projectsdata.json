@@ -16,8 +16,15 @@
   {
     "name": "Softworld Technologies",
     "description": "Developed the complete website for Softworld technologies as a Free Lancer.",
-    "image": "/assets/Softworldusa.PNG",
+    "image": "/assets/Softworldusa.png",
     "content": "Please, check out my resume to know more about technology stack.",
     "githublink": "http://www.softworldtechnologies.com/"
+  },
+  {
+    "name": "Thought Circuits",
+    "description": "Developed the complete website for Thought Circuits as a Free Lancer.",
+    "image": "/assets/thoughtcircuits.png",
+    "content": "Please, check out my resume to know more about technology stack.",
+    "githublink": "https://www.thoughtcircuits.com/"
   }
 ]

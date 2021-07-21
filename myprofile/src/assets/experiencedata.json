@@ -1,8 +1,19 @@
 [
   {
+    "align": "right",
+    "companyname": "SAP",
+    "date": "(12/2020 - Present)",
+    "description": [ "ITCM: SAP Intelligent Trade Claims Management is a Cloud application, which is used to manage the Claim Settlements." ],
+    "responsibilites": [
+      "Developed the Java Extraction Services to Extract data from S/4 and TPM into ITCM Landscape.",
+      "Developed the Cucumber Integration Tests for the MicroServices to perform end to end tests on the build pipeline.",
+      "Supporting the test driven development."
+    ]
+  },
+  {
     "align": "left",
     "companyname": "AT&T Labs",
-    "date": "(04/2019 - Present)",
+    "date": "(04/2019 - 12/2020)",
     "description": [ "POLO stands for Portal Open Loop Operations, which is used to restart, shutdown and to get the status of network resources." ],
     "responsibilites": [
       "Developed Single Page Application using W2UI Framework.",
