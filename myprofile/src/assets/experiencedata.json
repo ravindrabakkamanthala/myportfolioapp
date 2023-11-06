@@ -1,8 +1,19 @@
 [
   {
+    "align": "left",
+    "companyname": "Wayfair",
+    "date": "(03/2022 - Present)",
+    "description": [ "Wayfair: Customer Identity, Privacy and Segmentation" ],
+    "responsibilites": [
+      "Migrated the Wayfair Customer Information platform from Python to Java to achieve low latencies, Improvised the latency from p99 ~250ms to ~15ms, that supports 20k requests/sec.",
+      "Improvised the Identity Customer Device Mapping platform that helped Recommendation Engine/ML platforms to show right preferences based on user device landings and events which in turn helped the platform to grow the revenue ~15 million dollars in North America.",
+      "Migrated the storage from Hive to Native BigQuery as part of cost savings which saved +600k dollars per year for the company."
+    ]
+  },
+  {
     "align": "right",
     "companyname": "SAP",
-    "date": "(12/2020 - Present)",
+    "date": "(12/2020 - 03/2022)",
     "description": [ "ITCM: SAP Intelligent Trade Claims Management is a Cloud application, which is used to manage the Claim Settlements." ],
     "responsibilites": [
       "Developed the Java Extraction Services to Extract data from S/4 and TPM into ITCM Landscape.",
